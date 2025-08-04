@@ -1,0 +1,480 @@
+@media (width > 1660px) {
+
+    .questions__support-text {
+        .support-text {
+            max-width: 655px;
+        }
+    }
+
+    .questions__main-text {
+        font-size: 44px;
+
+        .oval-SVG {
+            height: 75px;
+            width: 394px;
+            top: -8px;
+            left: 47%;
+        }
+    }
+
+    .application__main-text {
+        font-size: 42px;
+    }
+
+    .application__support-text {
+        font-size: 20px;
+    }
+}
+
+@media (width < 1314px) {
+    .application__card-2 .bottom-arrow {
+
+        top: 100%;
+        left: -11%;
+        rotate: 115deg;
+    }
+}
+@media (width < 877px) {
+    .application__card-1 .top-arrow {
+        transform: rotate(90deg);
+        top: 100%;
+        left: 10%;
+    }
+
+    .application__card-2 .bottom-arrow {
+        top: 102%;
+        left: -11%;
+        rotate: 90deg
+
+    }
+
+    .create-main-text {
+        font-size: 36px;
+    }
+
+}
+
+
+@media (width < 1025px) {
+    .footer {
+        padding: {
+            left: 58px;
+            right: 58px;
+            top: 70px;
+        }
+    }
+}
+
+@media (width < 912px) {
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+}
+
+@media (width < 864px) {
+    .question {
+        width: 100%;
+    }
+}
+
+@media (width < 768px) {
+    .application__main-text {
+        font-size: 34px;
+    }
+
+    .application__support-text {
+        font-size: 16px;
+    }
+
+    .create {
+        padding: 60px 24px;
+    }
+
+
+    .create-main-text {
+        font-size: 32px;
+    }
+
+    .footer {
+        padding: {
+            left: 34px;
+            right: 34px;
+            top: 60px;
+        }
+    }
+    // .footer-nav {
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+}
+
+
+@media (width < 720px) {
+    .footer-nav {
+        flex-direction: column;
+    }
+}
+
+
+
+@media (width < 640px) {
+
+    .main-info__container {
+        width: auto;
+    }
+
+    .questions__support-text {
+        .support-text {
+            max-width: none;
+        }
+    }
+
+    .questions__main-text {
+        font-size: 36px;
+
+    }
+}
+
+
+
+
+@media (width < 628px) {
+    .footer {
+        padding: {
+            left: 24px;
+            right: 24px;
+        }
+    }
+}
+
+
+
+
+
+@media (width < 608px) {
+.footer {
+    align-items: start;
+}
+
+.footer-nav {
+    align-items: start;
+}
+
+.footer-list {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+}
+
+}
+
+
+
+
+@media (width < 605px) {
+    #question-button-5::before {
+        top: 1px;
+    }
+}
+
+
+@media (width < 586px) {
+    .create-main-text {
+        line-height: 32px;
+    }
+}
+
+
+@media (width < 572px) {
+
+    .questions__main-text {
+
+        .oval-SVG {
+            left: 29%;
+            top: 42px;
+            width: 215px;
+        }
+    }
+
+    .application__main-text {
+        font-size: 28px;
+    }
+
+    .process svg {
+        top: 70%;
+    }
+
+    .application__support-text {
+        font-size: 16px;
+    }
+}
+
+@media (width < 524px) {
+
+    .what-new__main-text {
+        font-size: 32px;
+    }
+
+
+
+
+
+}
+
+@media (width < 521px) {
+    .create-main-text {
+        font-size: 28px;
+    }
+}
+
+
+@media (width < 488px) {
+    #question-button-7::before {
+        top: 1px;
+    }
+}
+
+
+@media (width < 482px) {
+    #question-button-6::before {
+        top: 1px;
+    }
+}
+
+@media (width < 451px) {
+    #question-button-2::before {
+        top: 1px;
+    }
+}
+
+
+@media (width < 440px) {
+    .what-new__main-text-droplets {
+        left: 76%;
+    }
+}
+
+@media (width < 427px) {
+    #question-button-4::before {
+        top: 1px;
+    }
+}
+
+@media (width < 426px) {
+
+    .questions {
+        padding-bottom: 40px;
+    }
+
+
+    .application-info {
+        padding: 40px 24px;
+    }
+
+
+    .questions__main-text {
+        .oval-SVG {
+            left: 22%;
+            top: 42px;
+            width: 210px;
+        }
+    }
+
+
+    .application__cards {
+        padding-bottom: 40px;
+    }
+
+
+    .application__card {
+        height: 420px;
+    }
+
+    .application__card-2 {
+        margin-top: 0px;
+    }
+
+
+    .create {
+        padding: 40px 24px;
+    }
+
+    .create-subtext {
+        font-size: 16px;
+    }
+
+    .create-main-text {
+        font-size: 24px;
+
+    }
+
+    .create-button {
+        font-size: 14px;
+    }
+
+
+
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer-list {
+    gap: 24px;
+    }
+
+}
+
+@media (width < 392px) {
+    .questions__main-text {
+        font-size: 24px;
+
+        .oval-SVG {
+
+            left: 28%;
+
+
+            top: 43px;
+            width: 153px;
+
+        }
+    }
+}
+
+
+@media (width < 376px) {
+    .swiper.slider {
+        padding-bottom: 40px;
+    }
+
+    .what-new__main-info {
+        padding-top: 40px;
+    }
+
+    .what-new__main-text {
+        font-size: 24px
+    }
+
+    .what-new__sub-text {
+        font-size: 16px;
+    }
+
+    .what-new__link {
+        font-size: 16px;
+    }
+
+    .what-new__main-text-droplets {
+        width: 29px;
+        height: 28px;
+        left: 70%;
+        top: -10%;
+
+    }
+
+    .blog-post-cards {
+        padding-bottom: 40px;
+    }
+
+    .card__main-text {
+        font-size: 20px;
+    }
+
+    .card__date {
+        font-size: 14px;
+    }
+
+    .questions__support-text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .questions__sub-text {
+        font-size: 16px;
+    }
+
+    .question {
+
+
+        .question-block {
+            padding: 16px 0px;
+        }
+
+        .question-text {
+            font-size: 16px;
+        }
+
+        .question_answer-text {
+            font-size: 16px;
+
+        }
+
+        ._answer-active {
+            padding: 16px 0px;
+        }
+    }
+
+    .application__main-text {
+        font-size: 24px;
+    }
+
+
+    .application__cards-container {
+        gap: 30px;
+    }
+    .application__card {
+        height: 320px;
+    }
+
+    .application__card-1 .top-arrow, 
+    .application__card-2 .bottom-arrow {
+        width: 90px;
+        height: 30px;
+    }
+
+
+    .application__card-number {
+        height: 55px;
+    }
+
+
+    .application__card-1 .top-arrow {
+        top: 96%;
+    }
+
+    .application__card-support-text {
+        font-size: 14px;
+    }
+
+
+
+    .footer-list__item {
+        font-size: 14px;
+    }
+
+    .external-link {
+        width: 14px;
+        aspect-ratio: 1;
+    }
+
+
+
+}
+
+
+
+
+@media (width < 338px) {
+    .what-new__main-text-droplets {
+        left: 72%;
+    }
+
+
+}
+
+
+@media (width < 321px) {
+
+}

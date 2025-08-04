@@ -1,0 +1,68 @@
+@keyframes animation-button {
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes no-animation-button {
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+.menu__icon-animation::before {
+    animation-name: animation-button;
+    animation-duration: 0.5s;
+}
+
+.menu__icon-no-animation::before {
+
+}
+
+
+@keyframes user-name {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.4;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+
+.slide__avatar-group a:hover::before {
+    animation-name: user-name;
+    animation-duration: 0.5s;
+
+    
+}
+
+/* 
+@keyframes slide-white {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        background-color: aliceblue;
+    }
+}
+
+.swiper-slide.slide:hover {
+    animation-name: slide-white;
+    animation-duration: 0.5s;
+} */
+
+

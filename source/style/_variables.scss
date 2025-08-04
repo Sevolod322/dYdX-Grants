@@ -1,0 +1,58 @@
+
+// variables
+
+
+$my-color-green: green;
+$color-seva: rgb(56, 51, 51);
+
+$font-size-main-text: 32px;
+$rotate: 180deg;
+
+
+
+$color-green: rgba(22, 181, 127, 1);
+$color-brand: rgba(105, 102, 255, 1);
+$color-brand-hover: rgba(108, 131, 255, 1);
+$color-red: rgba(228, 85, 85, 1);
+$border-color: rgba(57, 57, 83, 1);
+$white-color: rgba(255, 255, 255);
+$white-color-hover: rgba(255, 255, 255, 0.2);
+
+
+$background-website: rgba(28, 28, 40, 1);
+
+
+
+$text-secondary: rgba(200, 199, 216, 1);
+$text-color-tertiary: rgba(165, 158, 186, 1);
+
+
+
+$blackout: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
+$blackout-2: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+$blackout-3: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.55));
+
+$blackout-left: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 10%, rgba(0, 0, 0, 0)  32%);
+
+$blackout-right: linear-gradient(-90deg, rgba(0, 0, 0, 0.25) 10%, rgba(0, 0, 0, 0)32%);
+
+// $blackout-text: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65));
+$blackout-left-right: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 3%, rgba(0, 0, 0, 0)8%),   linear-gradient(-90deg, rgba(0, 0, 0, 0.25) 3%, rgba(0, 0, 0, 0)8%)  ;
+
+$blackout-bottom: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 8%, rgba(0, 0, 0, 0) 25%);
+
+
+$border-card-color: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+
+
+
+$background-text: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55));
+$color-primary-Background: rgba(28, 28, 40, 1);
+
+$color-grey-Background: linear-gradient(193.53deg, rgba(44, 44, 61, 1),   rgba(26, 26, 39, 1));
+
+$color-brand-Background: linear-gradient(325.79deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+
+$secondary-background: rgba(57, 57, 83);
+$secondary-background-hover: rgba(79, 76, 100, 1);
+$load-image-block: rgba(35, 35, 52, 1);

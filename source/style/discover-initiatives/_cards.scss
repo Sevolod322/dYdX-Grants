@@ -1,0 +1,173 @@
+@use '../variables' as i;
+@use '../mixins' as mix;
+
+.initiatives__cards {
+
+    @include mix.d-flex(center, center);
+
+    background:  i.$blackout, i.$blackout-2;
+
+    padding: 0px 24px;
+
+
+    .container {
+        @include mix.d-flex(center, center, column);
+        
+    }
+
+}
+
+
+
+
+
+
+.cards {
+    @include mix.d-grid(auto, auto, center, center);
+    gap: 24px;
+    padding: {
+        
+        bottom: 90px;
+    }
+    
+}
+
+.initiatives__card {
+    padding: 24px;
+    @include mix.d-flex(space-between);
+    gap: 32px;
+
+    background: i.$secondary-background;
+
+    border-radius: 16px;
+    transition: all 1s ease;
+}
+
+.card-filter-active {
+    transition: order 0.5s ease;
+    order: -1;
+}
+
+
+
+.card__title {
+    max-width: 640px;
+}
+
+
+.card__main-title {
+    font-family: sans-serif;
+@include mix.typography(24px, 700, 32px);
+padding-bottom: 10px
+}
+
+
+.card__subtitle {
+    font-family: sans-serif;
+@include mix.typography(16px, 450, 24px);
+padding-bottom: 10px;
+}
+
+
+.card__price {
+    font-family: space mono;
+    @include mix.typography(16px, 400, 24px);
+    opacity: 0.7;
+}
+
+
+
+
+.card__badge {
+    @include mix.d-flex(center, center );
+    
+
+    padding: 4px 16px;
+
+    border-radius: 100px;
+
+    
+    font-family: sans-serif, 'Circular Std';
+    @include mix.typography(16px, 450, 24px, center);
+
+}
+
+.badge-funeded {
+    background: i.$color-primary-Background;
+
+}
+.badge-open {
+    background: i.$color-brand;
+}
+
+.badge-completed {
+    background: i.$color-green;
+    @include mix.d-flex(center, center ) ;
+    gap: 8px;
+}
+
+
+
+
+
+@media (width < 877px) {
+    .initiatives__card {
+        gap: 16px;
+    }
+
+
+
+    .card__main-title {
+        font-size: 22px;
+    }
+
+    .card__subtitle {
+        font-size: 15px;
+    }
+
+    .card__price {
+        font-size: 15px;
+    }
+
+    .card__badge {
+        font-size: 15px;
+    }
+}
+
+@media (width < 580px) {
+    .initiatives__card {
+        flex-direction: column;
+    }
+}
+
+
+@media (width < 503px) {
+    .initiatives__cards {
+        .container {
+            max-width: none;
+        }
+    }
+    .card__main-title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .card__subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card__price {
+
+        @include mix.d-flex(start, stretch, column, nowrap  );
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .card__Badge {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+

@@ -1,0 +1,215 @@
+@use 'sass:math';
+
+
+@use '../filter';
+@use '../importer';
+@use '../mixins' as mix;
+@use '../variables' as i;
+
+
+
+.grant-project {
+    
+
+    
+        background: i.$blackout, i.$blackout-2;
+
+}
+
+.container {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 24px;
+}
+
+
+.grant-project__cards {
+    @include mix.d-grid(repeat(3, 24.5em), 35.0625em, auto, auto, 35.0625em);
+    gap: 24px;
+
+
+}
+
+.grant-project__card {
+    transition: all 0.5s ease 0s;
+    
+    display: flex;
+    // padding: 1.5em;
+
+    background: i.$secondary-background;
+    
+    border-radius: 1em;
+
+    &:hover {
+        background: i.$secondary-background-hover;
+    }
+
+}
+
+@keyframes filter-active {
+    0% {
+        background: adjust-hue(i.$secondary-background-hover , $degrees: 0) ;
+        
+    }
+
+    50% {
+        background: adjust-hue(i.$secondary-background-hover , $degrees: 0.5) ;
+    }
+    
+    100% {
+        background: adjust-hue(i.$secondary-background-hover , $degrees: 0);
+    }
+}
+
+._card-active {
+    order: -1;
+
+    animation-name: filter-active;
+    animation-timing-function: ease;
+    animation-duration: 0.85s;
+    
+
+    transition: all linear 0.5s ;
+    
+    will-change: background;
+    
+
+}
+
+.card-container {
+    height: 100%;
+    @include mix.d-flex(space-between, start, column);
+    padding: 1.5em;
+}
+
+.image-block {
+    width: auto;
+    height: 180px;
+    border-radius: 16px;
+
+    background-color: i.$load-image-block;
+
+}
+
+
+.category {
+    color: i.$text-color-tertiary;
+    @include mix.typography(16px, 400 );
+    font-family: Space Mono;
+
+    
+
+}
+
+.card__main-text {
+    padding: 8px 0px;
+    @include mix.typography(24px, 700, 32px);
+}
+
+.card-price {
+    @include mix.d-flex();
+    gap: 0.5em;
+
+
+    color: i.$text-color-tertiary;
+    @include mix.typography(1em, 400 );
+    font-family: Space Mono;
+    padding-bottom: 16px;
+
+}
+
+
+.card__subtitle {
+    color: white;
+    @include mix.typography(1em, 400);
+    font-family: sans-serif, 'Circular Std';
+}
+
+
+
+
+
+
+
+
+
+@media (width < 1290px) {
+
+    .grant-project__cards {
+    grid-template-columns: repeat(2, 24.5em);
+    
+    }
+
+    .button-prev,
+    .button-next {
+        display: flex;
+        z-index: 10;
+    }
+
+}
+
+
+
+
+
+@media (width < 876px) {
+    .grant-project__cards {
+        grid-template-columns: repeat(1, 24.5em);
+        
+    }
+}
+
+
+
+
+
+
+@media (width < 460px) {
+    .grant-project__cards {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 480px;
+
+    }
+    .image-block {
+        height: 136px
+    }
+}
+
+
+@media (width < 398px) {
+
+
+    .card__main-text {
+    @include mix.typography(22px, 700, 32px);
+
+    }
+
+    .card-price {
+        flex-direction: column;
+        gap: 0.25em;
+    }
+}
+
+
+
+
+@media (width < 376px) {
+    .category {
+        font-size: 14px;
+    }
+    .card__main-text {
+        font-size: 20px;
+    }
+
+    .card-price {
+        font-size: 14px;
+        gap: 0px;
+    }
+    
+    .card__subtitle {
+        font-size: 14px;
+        font-family: Circular Std;
+        line-height: 20px;
+    }
+}

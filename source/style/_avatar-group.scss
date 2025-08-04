@@ -1,0 +1,183 @@
+@use 'variables' as i;
+@use 'mixins' as mix;
+
+
+
+
+
+.card__avatar-group {
+    display: flex;
+
+
+}
+
+.card__avatar-group img {
+    max-width: none;
+}
+
+
+
+
+
+
+.card__avatar-group a {
+    position: relative;
+    transform: translate(0px, 0px);
+    transition: all 0.5s ease;
+}
+
+.card__avatar-group a:hover {
+    transform: translate(0px, -20px);
+    transition: all 0.5s ease;
+
+}
+
+.card__avatar-group a::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+
+
+
+}
+
+
+.card__avatar-group a:hover::before {
+    content: "Grantee name";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: max-content;
+
+    padding: 8px 12px;
+
+    background-color: black;
+
+    border-radius: 7px;
+
+    position: absolute;
+    top: -48px;
+    left: -68%;
+
+    font-family: sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 24px;
+
+
+}
+
+
+
+
+.card__avatar-group a.avatar-next:hover::before {
+    top: -48px;
+    left: -68%;
+}
+
+
+
+
+.avatar {
+
+    padding: 2px;
+    background-color: #1C1C28;
+
+    border-radius: 50%;
+}
+
+
+
+
+
+// .avatar-next {
+//     margin-left: -15px;
+// }
+
+
+
+
+.avatar-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-next {
+    margin-left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+.slide__avatar-group a.avatar-next:hover::before {
+    top: -48px;
+    left: -68%;
+}
+
+
+
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    padding: 2px;
+    background-color: #1C1C28;
+
+    border-radius: 50%;
+}
+
+
+
+
+
+.avatar-next {
+    margin-left: -15px;
+}
+
+
+
+
+.avatar-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-next {
+    margin-left: -20px;
+}
+
+
+.add-user {
+    
+
+}
+
+.add-users-wrapper {
+    background: rgba(105, 102, 255, 1);
+    
+    font-family: sans-serif;
+    font-weight: 450;
+    font-style: Book;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    outline: 2px solid i.$secondary-background;
+
+    @include mix.d-flex(center, center);
+    
+
+    position: relative;
+    z-index: auto;
+}
+
+

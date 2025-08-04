@@ -1,0 +1,112 @@
+@use '../importer' ;
+@use  'switch-button';
+@use  '../avatar-group';
+@use 'sass:math';
+@use '../mixins' as mix;
+@use '../filter';
+@use  'cards-grants';
+@use '../variables' as i;
+
+
+
+.header {
+    background: i.$blackout-left-right;
+}
+
+.header__link-2 {
+
+}
+
+
+
+
+.header__link-2 {
+    opacity: 1;
+}
+
+.gands__main {
+    background: i.$blackout-bottom;
+
+    @include mix.d-flex(center, center );
+
+    .container {
+        max-width: 1224px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 24px;
+        padding-bottom: 80px
+    }
+}
+
+.gands__main-text {
+    @include mix.typography(18px, 700, 72px, center);
+    @include mix.fluid-text(60, 32);
+
+    padding: {
+        top: 90px;
+        
+    }
+}
+
+
+.footer {
+    background: i.$blackout-left-right;
+}
+
+
+@media (width < 1024px) {
+    .gands__main-text {
+        padding-top: 40px;
+    }
+    .grands__filter {
+        padding-top: 24px;
+    }
+}
+
+
+@media (width < 500px) {
+    .gands__main .container {
+        padding-bottom: 40px;
+    }
+
+
+
+    .gands__main-text {
+        line-height: 40px;
+        padding-top: 24px 0px;
+    }
+    .filter-list {
+        width: 340px;
+    }
+}
+
+@media (width < 460px) {
+    .filter-list {
+        width: 300px;
+    }
+
+
+}
+
+
+
+@media (width < 400px) {
+    .filter-list {
+        width: 280px;
+    }
+
+
+}
+
+@media ( width < 490px) {
+    .filter-list {
+        width: 250px;
+    }
+}
+
+
+@media (width < 360px) {
+    .filter-list {
+        width: 220px;
+    }
+}

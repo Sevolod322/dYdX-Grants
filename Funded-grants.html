@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="source/style/funded-grants/funded-grants.css" />
+
+    <link rel="shortcut icon" href="source/img/icons/avatar.ico" />
+
+    <script src="source/JS/components.js"></script>
+
+    <title>dYdX || Funded grants</title>
+</head>
+
+<body>
+    <x-header></x-header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="gands__main">
+                <div class="container">
+                    <h1 class="gands__main-text">Funded grants</h1>
+                    <div class="grands__filter">
+                        <span class="button-prev" id="button-prev">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <ul class="filter-list" id="filter-container">
+                            <li>
+                                <button class="filter-list__item _active" id="filter-item__all" type="button">
+                                    All
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-list__item" id="filter-item__technical" type="button">
+                                    Technical / Tool Development
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-list__item" id="filter-item__governance" type="button">
+                                    Governance
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-list__item" id="filter-item__growth" type="button">
+                                    Growth / Marketing
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-list__item" id="filter-item__analytics" type="button">
+                                    Analytics
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-list__item" id="filter-item__provider" type="button">
+                                    Third Party Provider
+                                </button>
+                            </li>
+                        </ul>
+
+                        <span class="button-next" id="button-next">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="swith-button">
+                        <!-- From Uiverse.io by Bodyhc -->
+                        <div class="checkbox-wrapper-35">
+                            <input value="private" name="switch" id="switch" type="checkbox" class="switch" />
+                            <label for="switch">
+                                <span class="switch-text">Show only completed</span>
+                            </label>
+                        </div>
+                        <span class="switch-text text-1">Show only completed</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grant-project">
+                <div class="container">
+                    <div class="grant-project__cards" id="grants-cards-container">
+
+
+                    </div>
+                </div>
+            </section>
+
+            <x-create></x-create>
+        </main>
+    </div>
+
+
+
+
+    <x-footer></x-footer>
+
+    <script src="source/JS/header.js" type="module"></script>
+    <script src="source/JS/funded-granst/grants-card-data.js" type="module"></script>
+    <script src="source/JS/funded-granst/grants-card.js" type="module"></script>
+    <script src="source/JS/cards-filter-grands.js" type="module"></script>
+</body>
+
+</html>

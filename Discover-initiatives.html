@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="source/img/icons/avatar.ico">
+
+    <link rel="stylesheet" href="source/style/discover-initiatives/discover-initiatives.css">
+
+    <title>dYdX || Discover initiatives</title>
+</head>
+
+<body>
+    <script src="source/JS/components.js"></script>
+    <!-- <h1>Discover initiatives</h1> -->
+    <div class="wrapper">
+        <x-header></x-header>
+
+
+
+        <section class="initiatives__title">
+
+            <div class="container">
+
+                <h1 class="initiatives__main-title">Discover initiatives (RFPs)</h1>
+                <p class="initiatives__subtitle">The list below includes initial ideas that we think could make
+                    excellent Grants. This is a living list that will continue to update as ideas popup.</p>
+
+
+            </div>
+            
+                <div class="cards__filter cards__filter-discover">
+                    <span class="card-prev button-prev button-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </span>
+                    <div class="grands__filter filters">
+
+                        <button  type="button" class="filter-list__item _active filter_all" id="filter_all">All</button>
+                        <button type="button" class="filter-list__item" id="filter_open">Open</button>
+                        <button type="button" class="filter-list__item" id="filter_funded">Funded</button>
+                        <button type="button" class="filter-list__item" id="filter_completed">Completed</button>
+                    </div>
+                    <span class="card-next button-next button-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                </div>
+
+        </section>
+
+        <section class="initiatives__cards">
+
+            <div class="container">
+
+
+                <div class="cards">
+
+
+
+                    <div class="initiatives__card card-1 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Funding Rate Page</h2>
+
+                            <p class="card__subtitle">Page that provides a live look at all funding rates with popular timeframes in annualized format</p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$45,000 - $85,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-2 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">CLI Trading Tool</h2>
+
+                            <p class="card__subtitle">
+                                Self-hosted CLI tool leveraging the dYdX API to allow all functionalities from a terminal
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$25,000 - $40,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-3 open">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">New Language SDKs</h2>
+
+                            <p class="card__subtitle">
+                                Replicate existing Python SDK to new programming languages with all the same features
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$25,000 - $40,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-open">Open</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-4 completed">
+    
+                        <div class="card__title">
+    
+                            <h2 class="card__main-title">Liquidation Alert Tool</h2>
+    
+                            <p class="card__subtitle">
+                                Self-hosted tool that alerts the trader of upcoming liquidation prices across multiple messaging venues
+                            </p>
+    
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$30,000 - $50,000</span>
+                            </div>
+    
+                        </div>
+                        <span class="card__badge badge-completed">Completed
+
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3337 1L5.00033 8.33333L1.66699 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </div>
+
+
+
+
+                    <div class="initiatives__card card-5 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Governance Dashboard</h2>
+
+                            <p class="card__subtitle">
+                                Governance page to promote  discussions, proposals, delegation and voting
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$15,000 - $30,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+
+                    <div class="initiatives__card card-6 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Delegation Tool</h2>
+
+                            <p class="card__subtitle">
+                                Webpage to allow active participants to market their voting and enable direct delegation from DYDX holders
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$15,000 - $30,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-7 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Newsletter</h2>
+
+                            <p class="card__subtitle">
+                                Weekly or Monthly newsletters promoting and educating the dYdX platform
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$10,000 - $20,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-8 funded">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Academy Contributions</h2>
+
+                            <p class="card__subtitle">
+                                Webpages, Courses, Glossaries and Youtube libraries educating new users on dYdX
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$10,000 - $25,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-funeded">Funded</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-9 open">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Discord bots</h2>
+
+                            <p class="card__subtitle">
+                                Additional Discord bots that notify members of activity on dYdX and governance
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$5,000 - $10,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-open">Open</span>
+                    </div>
+
+
+
+                    <div class="initiatives__card card-10 completed">
+
+                        <div class="card__title">
+
+                            <h2 class="card__main-title">Reward tracking & Simulator</h2>
+
+                            <p class="card__subtitle">
+                                Page or tool that allows traders to calculate future rewards and simulate earnings from activity
+                            </p>
+
+                            <div class="card__price">
+                                <span class="card__price-text"></span>
+                                <span class="price">$20,000 - $30,000</span>
+                            </div>
+
+                        </div>
+                        <span class="card__badge badge-completed">completed  
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3337 1L5.00033 8.33333L1.66699 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                
+                <!-- И таких надо 10! -->
+            </div>
+
+
+
+        </section>
+
+
+        <x-create></x-create>
+
+        <x-footer></x-footer>
+
+    </div>
+
+
+
+    <script src="source/JS/cards-filter.js"></script>
+    <script src="source/JS/header.js" type="module"></script>
+    <script src="source/JS/Discover-initiatives.js"></script>
+</body>
+
+</html>
